@@ -3,12 +3,14 @@ import { StyleSheet, Text, View, Button, Vibration } from 'react-native';
 import { Constants } from 'expo';
 
 export default class App extends React.Component {
-  state = {
-    minute: 25,
-    second: 1500,
-    pomodoro: false,
-    stop: false
-  };
+  constructor() {
+    state = {
+      minute: 25,
+      second: 1500,
+      pomodoro: false,
+      stop: false
+    };
+  }
 
   componentDidMount() {
     if (this.state.stop === false) {
